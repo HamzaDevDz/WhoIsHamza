@@ -40,7 +40,7 @@ export const Contact = () => {
     }
 
     return(
-        <div className={'contact'}>
+        <div id={'contact'} className={'contact'}>
             <div className={'contact__title'}>
                 CONTACT
                 <span className={'contact__title__line'}></span>

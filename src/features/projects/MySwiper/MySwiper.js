@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect} from "react"
 import './MySwiper.css'
 
 export const MySwiper = ({slides, class_container, class_wrapper, width, height}) => {
@@ -68,7 +68,17 @@ export const MySwiper = ({slides, class_container, class_wrapper, width, height}
                 {slides.map(slide => (
                     <div className={'swiper_slide'}
                          style={{width: String(width) + 'px'}}
-                    >{slide}</div>
+                    >
+                        {slide.img}
+                        <div className={'swiper_slide_link'}>
+                            <span className={'link link_website'} onClick={()=>{
+                                window.open(slide.website)
+                            }}>WebSite</span>
+                            <span className={'link link_github'} onClick={()=>{
+                                window.open(slide.github)
+                            }}>GitHub</span>
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>

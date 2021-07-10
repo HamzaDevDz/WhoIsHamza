@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 export const About = () => {
 
     return(
-        <div className={'about'}>
+        <div id={'about'} className={'about'}>
             <p className={'about__title'}>
                 ABOUT
                 <span className={'about__title__line'}></span>

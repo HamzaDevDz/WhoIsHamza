@@ -147,3 +147,25 @@
 .about__whoiam__skills__express::after{
     width: 50%;
 }
+
+/*------------------------------- RESPONSIVE --------------------------------*/
+@media screen and (max-width: 700px) {
+    .about{
+        width: 100%;
+    }
+    .about__services, .about__whoiam{
+        width: 100%;
+        flex-direction: column;
+    }
+    .about__services__service{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .about__whoiam__me, .about__whoiam__skills{
+        width: 80%;
+        margin: 20px 0;
+    }
+    .about__whoiam__skills__skill{
+        margin: 20px 0;
+    }
+}

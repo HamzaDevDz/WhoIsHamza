@@ -30,6 +30,8 @@
     font-size: 1.5rem;
     transition: 1s;
     z-index: 1;
+    color: white !important;
+    text-decoration: none;
 }
 .header .view-my-work-btn *{
     margin: 10px 10px;
@@ -166,6 +168,16 @@
     left: initial;
     animation-delay: 1.2s;
     animation-duration: 2.6s;
+}
+
+/* ----------------------------- RESPONSIVE -------------------------- */
+@media screen and (max-width: 500px) {
+    .header .description {
+        font-size: 1.5rem;
+    }
+    .view-my-work-btn{
+        font-size: 1.2rem !important;
+    }
 }
 
 
