@@ -42,6 +42,7 @@
 .header .view-my-work-btn:hover{
     cursor: pointer;
     background-color: #04C2C9;
+    border-color: #04C2C9;
 }
 .header .view-my-work-btn:hover .arrow{
     transform: rotateZ(90deg);

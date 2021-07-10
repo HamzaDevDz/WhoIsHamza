@@ -1,0 +1,50 @@
+.swiper_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+    overflow: hidden;
+}
+.swiper_arrow{
+    position: absolute;
+    z-index: 1;
+    font-size: 3rem;
+    /*font-weight: bold;*/
+    transition: 0.3s;
+}
+.swiper_arrow:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.swiper_arrow_left{
+    left: 5px;
+}
+.swiper_arrow_right{
+    right: 5px;
+}
+.swiper_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: 0.5s;
+}
+.swiper_slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+.rightSlide{
+    transform: scale(0.8);
+}
+.leftSlide{
+    transform: scale(0.8);
+}
+.swiper_slide img{
+    width: 100%;
+    max-height: 100%;
+}
