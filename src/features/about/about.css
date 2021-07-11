@@ -146,11 +146,25 @@
 .about__whoiam__skills__react::after{
     width: 70%;
 }
+.about__whoiam__skills__redux::after{
+    width: 70%;
+}
 .about__whoiam__skills__mysql::after{
     width: 60%;
 }
+.about__whoiam__skills__mongodb::after{
+    width: 55%;
+}
 .about__whoiam__skills__express::after{
     width: 50%;
+}
+
+.algiers{
+    color: blue;
+    font-weight: bolder;
+}
+.algiers:hover{
+    cursor: pointer;
 }
 
 /*------------------------------- RESPONSIVE --------------------------------*/

@@ -9,13 +9,15 @@ export const NavBar = () => {
     let projectsCoord
     let contactCoord
     useEffect(()=>{
-        aboutCoord = document.getElementById('about').getBoundingClientRect().top
-        projectsCoord = document.getElementById('projects').getBoundingClientRect().top
-        contactCoord = document.getElementById('contact').getBoundingClientRect().top
+        aboutCoord = document.getElementById('about').offsetTop
+        projectsCoord = document.getElementById('projects').offsetTop
+        contactCoord = document.getElementById('contact').offsetTop
+        console.log(aboutCoord)
+        console.log(projectsCoord)
+        console.log(contactCoord)
     },[])
 
-
-    document.onscroll = () => {
+    window.onscroll = () => {
         const navBar = document.querySelector('.navBar')
         if(window.scrollY >= window.innerHeight){
             if(!navBar.classList.contains('floating')){
@@ -28,12 +30,17 @@ export const NavBar = () => {
             }
         }
 
+        const offset = 50
+
         const navBar_home = document.querySelector('.navBar__anchors__home')
         const navBar_about = document.querySelector('.navBar__anchors__about')
         const navBar_projects = document.querySelector('.navBar__anchors__projects')
         const navBar_contact = document.querySelector('.navBar__anchors__contact')
 
-        if(window.scrollY < aboutCoord){
+        const Y = window.scrollY
+        console.log(Y)
+
+        if(Y < aboutCoord){
             if(navBar_about.classList.contains('into')){
                 navBar_about.classList.remove('into')
             }
@@ -41,7 +48,7 @@ export const NavBar = () => {
                 navBar_home.classList.add('into')
             }
         }
-        else if(window.scrollY >= aboutCoord && window.scrollY < projectsCoord){
+        else if(Y >= aboutCoord && Y < projectsCoord){
             if(navBar_home.classList.contains('into')){
                 navBar_home.classList.remove('into')
             }
@@ -52,7 +59,7 @@ export const NavBar = () => {
                 navBar_about.classList.add('into')
             }
         }
-        else if(window.scrollY >= projectsCoord && window.scrollY < contactCoord){
+        else if(Y >= projectsCoord && Y < contactCoord){
             if(navBar_about.classList.contains('into')){
                 navBar_about.classList.remove('into')
             }
@@ -63,7 +70,8 @@ export const NavBar = () => {
                 navBar_projects.classList.add('into')
             }
         }
-        else if(window.scrollY >= contactCoord){
+        else if(Y >= contactCoord){
+            console.log('contact')
             if(navBar_projects.classList.contains('into')){
                 navBar_projects.classList.remove('into')
             }

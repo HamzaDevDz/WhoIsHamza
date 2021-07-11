@@ -10,17 +10,12 @@ export const MySwiper = ({slides, class_container, class_wrapper, width, height}
 
     let x = window.matchMedia("(max-width: 800px)")
     window.addEventListener('resize', ()=>{
-        console.log('media')
         if (x.matches) {
-            console.log('smart')
             setView(1.3)
             // view = 1.5
-            console.log(view)
         } else {
-            console.log('pc')
             setView(2)
             // view = 2
-            console.log(view)
         }
     })
 
@@ -38,13 +33,9 @@ export const MySwiper = ({slides, class_container, class_wrapper, width, height}
         }
 
         if (x.matches) {
-            console.log('smart')
             setView(1.3)
-            console.log(view)
         } else {
-            console.log('pc')
             setView(2)
-            console.log(view)
         }
     },[])
 

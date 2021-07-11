@@ -19,8 +19,8 @@ export const About = () => {
                         <div className={'about__services__service__img'}>
                             <img src={'./services/service.png'} alt={'Service'} />
                         </div>
-                        <p className={'about__services__service__title'}>À votre service</p>
-                        <p className={'about__services__service__desc'}>Pour la réalisation et la concrétisation de vos idées.</p>
+                        <p className={'about__services__service__title'}>At your service</p>
+                        <p className={'about__services__service__desc'}>For the realization and concretization of your ideas.</p>
                     </div>
                     <div className={'about__services__service'}>
                         <div className={'about__services__service__img'}>
@@ -50,14 +50,21 @@ export const About = () => {
                         <Card className={'about__whoiam__me__card'}>
                             <CardContent>
                                 <Typography variant="h5" component="h2">
-                                    Qui suis-je?
+                                    Who I am?
                                 </Typography>
                                 <Typography color="textSecondary">
-                                    Je suis un développeur Front-End d'Alger en Algérie.
+                                    I am an Algerian Front-End Developer, from the city of <span className={'algiers'} onClick={()=>{
+                                        window.open('https://en.wikipedia.org/wiki/Algiers')
+                                }}>Algiers</span>.
                                 </Typography>
                                 <Typography color="textSecondary">
-                                    J'aime vraiment coder, développer et réaliser mes idées et mes perspectives, <br/>
-                                    j'aime concrétiser ma vision à l'aide du JS et du CSS.
+                                    Coding, for me, is above all a way to materialize my imagination, my perspectives and my desires.
+                                    <br/>
+                                    How beautiful they are, the CSS and the JS, isn't it? ;) <br/>
+                                    It is my pen to write, my keyboard to code and my magic wand to make magic ^_^. <br/>
+                                </Typography>
+                                <Typography variant="h5" component="h5">
+                                    So, making magic together.
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -77,9 +84,17 @@ export const About = () => {
                             <span className={'about__whoiam__skills__skill__name'}>React</span>
                             <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
                         </div>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__redux'}>
+                            <span className={'about__whoiam__skills__skill__name'}>Redux</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
+                        </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__mysql'}>
                             <span className={'about__whoiam__skills__skill__name'}>MySQL</span>
                             <span className={'about__whoiam__skills__skill__percentage'}>60%</span>
+                        </div>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__mongodb'}>
+                            <span className={'about__whoiam__skills__skill__name'}>MongoDB</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>50%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__express'}>
                             <span className={'about__whoiam__skills__skill__name'}>Express</span>
