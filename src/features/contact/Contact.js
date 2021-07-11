@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './contact.css'
+import {Slide} from "react-reveal";
 
 export const Contact = () => {
 
@@ -49,19 +50,22 @@ export const Contact = () => {
                 Have a question or want to work together?
             </p>
             <form className={'contact__form'}>
-                <div className={'contact__form__textField contact__form__name'}>
-                    <input required className={'input'} value={name} onChange={e=>setName(e.target.value)} />
-                    <span className={'placeholder'}>Name</span>
-                </div>
-                <div className={'contact__form__textField contact__form__email'}>
-                    <input required className={'input'} value={email} onChange={e=>setEmail(e.target.value)} />
-                    <span className={'placeholder'}>Email</span>
-                </div>
-                <div className={'contact__form__textField contact__form__message'}>
-                    <textarea required className={'input'} value={message} onChange={e=>setMessage(e.target.value)} />
-                    <span className={'placeholder'}>Your message</span>
-                </div>
-                <button className={'contact__form__btnSubmit'} type={'submit'} onClick={handleSubmitMessage}>Submit</button>
+                <Slide bottom delay={300}>
+                    <div className={'contact__form__textField contact__form__name'}>
+                        <input required className={'input'} value={name} onChange={e=>setName(e.target.value)} />
+                        <span className={'placeholder'}>Name</span>
+                    </div>
+                    <div className={'contact__form__textField contact__form__email'}>
+                        <input required className={'input'} value={email} onChange={e=>setEmail(e.target.value)} />
+                        <span className={'placeholder'}>Email</span>
+                    </div>
+                    <div className={'contact__form__textField contact__form__message'}>
+                        <textarea required className={'input'} value={message} onChange={e=>setMessage(e.target.value)} />
+                        <span className={'placeholder'}>Your message</span>
+                    </div>
+                    <button className={'contact__form__btnSubmit'} type={'submit'} onClick={handleSubmitMessage}>Submit</button>
+                </Slide>
+
             </form>
         </div>
     )

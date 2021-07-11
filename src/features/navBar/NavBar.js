@@ -1,6 +1,7 @@
 import React, {useEffect} from "react"
 import './navBar.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import {Slide} from "react-reveal";
 
 export const NavBar = () => {
 

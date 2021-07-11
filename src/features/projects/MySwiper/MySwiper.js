@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import './MySwiper.css'
 
 export const MySwiper = ({slides, class_container, class_wrapper, width, height}) => {
@@ -6,9 +6,27 @@ export const MySwiper = ({slides, class_container, class_wrapper, width, height}
     let position = width * (slides.length / 2 - 0.5)
     let index = 0
 
+    let [view, setView] = useState(0)
+
+    let x = window.matchMedia("(max-width: 800px)")
+    window.addEventListener('resize', ()=>{
+        console.log('media')
+        if (x.matches) {
+            console.log('smart')
+            setView(1.3)
+            // view = 1.5
+            console.log(view)
+        } else {
+            console.log('pc')
+            setView(2)
+            // view = 2
+            console.log(view)
+        }
+    })
+
     useEffect(()=>{
         const container = document.querySelector(`.${class_container}`)
-        container.style.width = String(2*width) + 'px'
+        // container.style.width = String(view*width) + 'px'
         container.style.height = String(height) + 'px'
         const wrapper = document.querySelector(`.${class_wrapper}`)
         wrapper.style.height = String(height) + 'px'
@@ -17,6 +35,16 @@ export const MySwiper = ({slides, class_container, class_wrapper, width, height}
         slidesTags[index].classList.add('currentSlide')
         if(index + 1 <= slides.length - 1){
             slidesTags[index + 1].classList.add('rightSlide')
+        }
+
+        if (x.matches) {
+            console.log('smart')
+            setView(1.3)
+            console.log(view)
+        } else {
+            console.log('pc')
+            setView(2)
+            console.log(view)
         }
     },[])
 
@@ -61,7 +89,7 @@ export const MySwiper = ({slides, class_container, class_wrapper, width, height}
     }
 
     return(
-        <div className={`${class_container} swiper_container`}>
+        <div className={`${class_container} swiper_container`} style={{width: String(view*width) + 'px'}}>
             <div className={'swiper_arrow swiper_arrow_right'} onClick={handeRight}>&#62;</div>
             <div className={'swiper_arrow swiper_arrow_left'} onClick={handleLeft}>&#60;</div>
             <div className={`${class_wrapper} swiper_wrapper`}>

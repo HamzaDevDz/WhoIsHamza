@@ -1,13 +1,21 @@
 import React from "react"
 import './projects.css'
 import {MySwiper} from "./MySwiper/MySwiper";
+import {Fade} from "react-reveal";
 
 export const Projects = () => {
 
-    let width = 390
-    let height = 300
+    let width
+    let height
 
-    let x = window.matchMedia("(max-width: 700")
+    if (window.matchMedia("(max-width: 800px)").matches) {
+        width = 300
+        height = 210
+    } else {
+        width = 390
+        height = 300
+    }
+
 
     const slides = [
         {img: <img src={'./projects/messenger.jpg'} alt={'MessengerFacebookClone'} />,
@@ -21,13 +29,16 @@ export const Projects = () => {
                 PROJECTS
                 <span className={'projects__title__line'}></span>
             </div>
-            <MySwiper
-                slides={slides}
-                class_container={'projects__swiperContainer'}
-                class_wrapper={'projects__swiperWrapper'}
-                width={width}
-                height={height}
+            <Fade bottom delay={300}>
+                <MySwiper
+                    slides={slides}
+                    class_container={'projects__swiperContainer'}
+                    class_wrapper={'projects__swiperWrapper'}
+                    width={width}
+                    height={height}
                 />
+            </Fade>
+
         </div>
     )
 }
