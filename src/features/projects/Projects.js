@@ -20,7 +20,10 @@ export const Projects = () => {
     const slides = [
         {img: <img src={'./projects/messenger.jpg'} alt={'MessengerFacebookClone'} />,
             github: 'https://github.com/baghdadhamdoud/WhoIsHamza',
-            website: 'https://messenger-facebook-clone.netlify.app/'}
+            website: 'https://messenger-facebook-clone.netlify.app/'},
+        {img: <img src={'./projects/instagram.JPG'} alt={'InstagramClone'} />,
+        github: 'https://github.com/baghdadhamdoud/instagram-clone',
+        website: 'https://instagram-clone-byhamza.netlify.app/'}
     ]
 
     return(
