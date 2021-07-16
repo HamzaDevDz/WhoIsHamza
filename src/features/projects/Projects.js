@@ -19,10 +19,10 @@ export const Projects = () => {
 
     const slides = [
         {img: <img src={'./projects/messenger.jpg'} alt={'MessengerFacebookClone'} />,
-            github: 'https://github.com/baghdadhamdoud/WhoIsHamza',
+            github: 'https://github.com/hamzadevdz/WhoIsHamza',
             website: 'https://messenger-facebook-clone.netlify.app/'},
         {img: <img src={'./projects/instagram.JPG'} alt={'InstagramClone'} />,
-        github: 'https://github.com/baghdadhamdoud/instagram-clone',
+        github: 'https://github.com/hamzadevdz/instagram-clone',
         website: 'https://instagram-clone-byhamza.netlify.app/'}
     ]
 
@@ -41,7 +41,6 @@ export const Projects = () => {
                     height={height}
                 />
             </Fade>
-
         </div>
     )
 }

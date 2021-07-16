@@ -25,3 +25,8 @@
     height: 4px;
     background-color: #45474A;
 }
+.projects__swiperContainer{
+    padding: 50px 0;
+    border-bottom: 1px solid lightgrey;
+    /*border-top: 1px solid lightgrey;*/
+}

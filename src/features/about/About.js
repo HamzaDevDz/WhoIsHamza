@@ -72,33 +72,37 @@ export const About = () => {
                 </div>
                 <div className={'about__whoiam__skills'}>
                     <Slide right>
-                        <div className={'about__whoiam__skills__skill about__whoiam__skills__css'}>
-                            <span className={'about__whoiam__skills__skill__name'}>CSS</span>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__react'}>
+                            <span className={'about__whoiam__skills__skill__name'}>React</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>80%</span>
+                        </div>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__redux'}>
+                            <span className={'about__whoiam__skills__skill__name'}>Redux</span>
                             <span className={'about__whoiam__skills__skill__percentage'}>80%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__js'}>
                             <span className={'about__whoiam__skills__skill__name'}>JavaScript</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>80%</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>75%</span>
                         </div>
-                        <div className={'about__whoiam__skills__skill about__whoiam__skills__react'}>
-                            <span className={'about__whoiam__skills__skill__name'}>React</span>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__css'}>
+                            <span className={'about__whoiam__skills__skill__name'}>CSS</span>
                             <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
                         </div>
-                        <div className={'about__whoiam__skills__skill about__whoiam__skills__redux'}>
-                            <span className={'about__whoiam__skills__skill__name'}>Redux</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
-                        </div>
-                        <div className={'about__whoiam__skills__skill about__whoiam__skills__mysql'}>
-                            <span className={'about__whoiam__skills__skill__name'}>MySQL</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>60%</span>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__express'}>
+                            <span className={'about__whoiam__skills__skill__name'}>Express</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>50%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__mongodb'}>
                             <span className={'about__whoiam__skills__skill__name'}>MongoDB</span>
                             <span className={'about__whoiam__skills__skill__percentage'}>50%</span>
                         </div>
-                        <div className={'about__whoiam__skills__skill about__whoiam__skills__express'}>
-                            <span className={'about__whoiam__skills__skill__name'}>Express</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>50%</span>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__mysql'}>
+                            <span className={'about__whoiam__skills__skill__name'}>MySQL</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>60%</span>
+                        </div>
+                        <div className={'about__whoiam__skills__skill about__whoiam__skills__firebase'}>
+                            <span className={'about__whoiam__skills__skill__name'}>Firebase</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>60%</span>
                         </div>
                     </Slide>
 
