@@ -23,8 +23,8 @@ export const Header = () => {
 
             <Fade cascade top >
                 <p className={'description'}>
-                    Hello, I'm <span>Hamza</span> <br/>
-                    I'm a front-end web developer
+                    Hello, I'm <span>Baghdad</span> <br/>
+                    I'm a web developer
                 </p>
                 <AnchorLink href={'#projects'} className={'view-my-work-btn'}>
                     <p className={'text'}>

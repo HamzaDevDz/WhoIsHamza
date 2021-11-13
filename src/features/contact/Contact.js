@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import './contact.css'
-import {Slide} from "react-reveal";
+import {Slide} from "react-reveal"
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import HomeWorkIcon from '@mui/icons-material/HomeWork';
 
 export const Contact = () => {
 
@@ -50,7 +54,7 @@ export const Contact = () => {
                 Have a question or want to work together?
             </p>
             <form className={'contact__form'}>
-                <Slide bottom delay={300}>
+                <Slide bottom delay={100}>
                     <div className={'contact__form__textField contact__form__name'}>
                         <input required className={'input'} value={name} onChange={e=>setName(e.target.value)} />
                         <span className={'placeholder'}>Name</span>
@@ -65,8 +69,33 @@ export const Contact = () => {
                     </div>
                     <button className={'contact__form__btnSubmit'} type={'submit'} onClick={handleSubmitMessage}>Submit</button>
                 </Slide>
-
             </form>
+            <div className={'contact__footer'}>
+                <div className={'contact__footer__link'} onClick={()=>{
+                    window.open('https://www.instagram.com/baghdad_hamdoud/')
+                }}>
+                    <InstagramIcon />
+                    <p className={'contact__footer__link__title'}>Instagram</p>
+                </div>
+                <div className={'contact__footer__link'} onClick={()=>{
+                    window.open('https://www.linkedin.com/in/baghdad-dev-2227b717a/')
+                }}>
+                    <LinkedInIcon />
+                    <p className={'contact__footer__link__title'}>Linkedin</p>
+                </div>
+                <div className={'contact__footer__link'} onClick={()=>{
+                    window.open('https://github.com/HamzaDevDz')
+                }}>
+                    <GitHubIcon />
+                    <p className={'contact__footer__link__title'}>Github</p>
+                </div>
+                <div className={'contact__footer__link'} onClick={()=>{
+                    window.open('https://www.upwork.com/freelancers/~011a731d4b8f40cb74')
+                }}>
+                    <HomeWorkIcon />
+                    <p className={'contact__footer__link__title'}>Upwork</p>
+                </div>
+            </div>
         </div>
     )
 }

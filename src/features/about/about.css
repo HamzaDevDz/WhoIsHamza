@@ -28,7 +28,7 @@
 }
 /*---------------------------------SERVICES------------------------------------------*/
 .about__services{
-    width: 80%;
+    width: 100%;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@
     justify-content: space-evenly;
     align-items: center;
     color: #616161;
-    width: 30%;
+    width: 200px;
     text-align: center;
 }
 .about__services__service__img{
@@ -147,16 +147,16 @@
     width: 75%;
 }
 .about__whoiam__skills__css::after{
-    width: 70%;
+    width: 75%;
 }
 .about__whoiam__skills__express::after{
-    width: 50%;
+    width: 60%;
 }
 .about__whoiam__skills__mongodb::after{
-    width: 55%;
+    width: 70%;
 }
 .about__whoiam__skills__mysql::after{
-    width: 60%;
+    width: 70%;
 }
 .about__whoiam__skills__firebase::after{
     width: 60%;

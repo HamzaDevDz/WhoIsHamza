@@ -31,6 +31,13 @@ export const About = () => {
                     </div>
                     <div className={'about__services__service'}>
                         <div className={'about__services__service__img'}>
+                            <img src={'./services/adaptability.png'} alt={'Adaptability'} />
+                        </div>
+                        <p className={'about__services__service__title'}>Adaptability</p>
+                        <p className={'about__services__service__desc'}>I can adapt to any situation, no matter how difficult or challenging it is.</p>
+                    </div>
+                    <div className={'about__services__service'}>
+                        <div className={'about__services__service__img'}>
                             <img src={'./services/responsive.png'} alt={'Service'} />
                         </div>
                         <p className={'about__services__service__title'}>Responsive</p>
@@ -43,7 +50,7 @@ export const About = () => {
                 <div className={'about__whoiam__me'}>
                     <Bounce left>
                         <div className={'about__whoiam__me__img'}>
-                            <img src={'./hamza.jpg'} alt={'My_Photo'} />
+                            <img src={'./baghdad.jpg'} alt={'My_Photo'} />
                         </div>
                     </Bounce>
                     <Fade left delay={300}>
@@ -53,7 +60,7 @@ export const About = () => {
                                     Who I am?
                                 </Typography>
                                 <Typography color="textSecondary">
-                                    I am an Algerian Front-End Developer, from the city of <span className={'algiers'} onClick={()=>{
+                                    I am an Algerian Web Developer, from the city of <span className={'algiers'} onClick={()=>{
                                         window.open('https://en.wikipedia.org/wiki/Algiers')
                                 }}>Algiers</span>.
                                 </Typography>
@@ -86,19 +93,19 @@ export const About = () => {
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__css'}>
                             <span className={'about__whoiam__skills__skill__name'}>CSS</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>75%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__express'}>
                             <span className={'about__whoiam__skills__skill__name'}>Express</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>50%</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>60%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__mongodb'}>
                             <span className={'about__whoiam__skills__skill__name'}>MongoDB</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>50%</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__mysql'}>
                             <span className={'about__whoiam__skills__skill__name'}>MySQL</span>
-                            <span className={'about__whoiam__skills__skill__percentage'}>60%</span>
+                            <span className={'about__whoiam__skills__skill__percentage'}>70%</span>
                         </div>
                         <div className={'about__whoiam__skills__skill about__whoiam__skills__firebase'}>
                             <span className={'about__whoiam__skills__skill__name'}>Firebase</span>
