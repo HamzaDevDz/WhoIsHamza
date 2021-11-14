@@ -122,3 +122,12 @@
 .contact__footer__link:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px){
+    .contact__form{
+        width: 95%;
+    }
+    .contact__footer__link__title{
+        display: none;
+    }
+}

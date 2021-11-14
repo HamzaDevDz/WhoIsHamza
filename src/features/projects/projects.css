@@ -136,12 +136,17 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 40px;
+        width: 95%;
     }
     .projects__container__project__img{
         margin-bottom: 20px;
+        width: 100%;
     }
     .projects__container__progress{
         display: none;
+    }
+    .projects__container__project__description{
+        width: 100%;
     }
     .projects__container__project__descriptionLeft{
         align-items: flex-start;
