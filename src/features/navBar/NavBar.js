@@ -12,9 +12,6 @@ export const NavBar = () => {
         aboutCoord = document.getElementById('about').offsetTop
         projectsCoord = document.getElementById('projects').offsetTop
         contactCoord = document.getElementById('contact').offsetTop
-        console.log(aboutCoord)
-        console.log(projectsCoord)
-        console.log(contactCoord)
     },[])
 
     window.onscroll = () => {
@@ -38,7 +35,6 @@ export const NavBar = () => {
         const navBar_contact = document.querySelector('.navBar__anchors__contact')
 
         const Y = window.scrollY
-        console.log(Y)
 
         if(Y < aboutCoord){
             if(navBar_about.classList.contains('into')){
@@ -71,7 +67,6 @@ export const NavBar = () => {
             }
         }
         else if(Y >= contactCoord){
-            console.log('contact')
             if(navBar_projects.classList.contains('into')){
                 navBar_projects.classList.remove('into')
             }

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import './contact.css'
 import {Slide} from "react-reveal"
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,39 +8,37 @@ import HomeWorkIcon from '@mui/icons-material/HomeWork';
 
 export const Contact = () => {
 
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const name = useRef()
+    const email = useRef()
+    const message = useRef()
 
-    const handleSubmitMessage = () => {
-        if(name === '' || email === '' || message === ''){
-            if(name === ''){
-                const nameField = document.querySelector('.contact__form__name')
-                nameField.classList.add('alert')
+    const handleSubmitMessage = (e) => {
+        e.preventDefault()
+        if(name.current.value === '' || email.current.value === '' || message.current.value === ''){
+            if(name.current.value === ''){
+                name.current.classList.add('alert')
                 setTimeout(()=>{
-                    nameField.classList.remove('alert')
+                    name.current.classList.remove('alert')
                 }, 2000)
             }
-            if(email === ''){
-                const emailField = document.querySelector('.contact__form__email')
-                emailField.classList.add('alert')
+            if(email.current.value === ''){
+                email.current.classList.add('alert')
                 setTimeout(()=>{
-                    emailField.classList.remove('alert')
+                    email.current.classList.remove('alert')
                 }, 2000)
             }
-            if(message === ''){
-                const messageField = document.querySelector('.contact__form__message')
-                messageField.classList.add('alert')
+            if(message.current.value === ''){
+                message.current.classList.add('alert')
                 setTimeout(()=>{
-                    messageField.classList.remove('alert')
+                    message.current.classList.remove('alert')
                 }, 2000)
             }
         }
         else{
+            name.current.value = ''
+            email.current.value = ''
+            message.current.value = ''
             alert('Submited !')
-            setName('')
-            setEmail('')
-            setMessage('')
         }
     }
 
@@ -53,23 +51,24 @@ export const Contact = () => {
             <p className={'contact__question'}>
                 Have a question or want to work together?
             </p>
-            <form className={'contact__form'}>
+            <form className={'contact__form'} name="contact-form" method={'post'}>
                 <Slide bottom delay={100}>
                     <div className={'contact__form__textField contact__form__name'}>
-                        <input required className={'input'} value={name} onChange={e=>setName(e.target.value)} />
+                        <input required className={'input'} ref={name} name={'name'}/>
                         <span className={'placeholder'}>Name</span>
                     </div>
                     <div className={'contact__form__textField contact__form__email'}>
-                        <input required className={'input'} value={email} onChange={e=>setEmail(e.target.value)} />
+                        <input required className={'input'} ref={email} name={'email'}/>
                         <span className={'placeholder'}>Email</span>
                     </div>
                     <div className={'contact__form__textField contact__form__message'}>
-                        <textarea required className={'input'} value={message} onChange={e=>setMessage(e.target.value)} />
+                        <textarea required className={'input'} ref={message} name={'message'}/>
                         <span className={'placeholder'}>Your message</span>
                     </div>
                     <button className={'contact__form__btnSubmit'} type={'submit'} onClick={handleSubmitMessage}>Submit</button>
                 </Slide>
             </form>
+            <input type="hidden" name="form-name" value="contact-form" />
             <div className={'contact__footer'}>
                 <div className={'contact__footer__link'} onClick={()=>{
                     window.open('https://www.instagram.com/baghdad_hamdoud/')

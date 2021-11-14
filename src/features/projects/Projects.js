@@ -92,7 +92,7 @@ export const Projects = () => {
                         </div>
                     </Fade>
                     <Fade right>
-                        <div className={'projects__container__project__description projects__container__project__descriptionRight'}>
+                        <div className={'projects__container__project__description'}>
                             <p className={'projects__container__project__description__title'}>
                                 E-Commerce WAX
                             </p>
@@ -106,7 +106,19 @@ export const Projects = () => {
                     </Fade>
                 </div>
                 {/*MESSENGER*/}
-                <div className={'projects__container__project'}>
+                <div className={'projects__container__project projects__container__projectReverse'}>
+                    <Fade right>
+                        <div className={'projects__container__project__img'}>
+                            <img src={'./projects/messenger.jpg'} alt={''} />
+                            <div className={'projects__container__project__img__btn'}>
+                                <button onClick={() => {
+                                    window.open('https://github.com/HamzaDevDz/messenger-facebook-clone')
+                                }}>
+                                    Github
+                                </button>
+                            </div>
+                        </div>
+                    </Fade>
                     <Fade left>
                         <div className={'projects__container__project__description projects__container__project__descriptionLeft'}>
                             <p className={'projects__container__project__description__title'}>
@@ -118,18 +130,6 @@ export const Projects = () => {
                             <p className={'projects__container__project__description__date'}>
                                 August 2021
                             </p>
-                        </div>
-                    </Fade>
-                    <Fade right>
-                        <div className={'projects__container__project__img'}>
-                            <img src={'./projects/messenger.jpg'} alt={''} />
-                            <div className={'projects__container__project__img__btn'}>
-                                <button onClick={() => {
-                                    window.open('https://github.com/HamzaDevDz/messenger-facebook-clone')
-                                }}>
-                                    Github
-                                </button>
-                            </div>
                         </div>
                     </Fade>
                 </div>
@@ -148,7 +148,7 @@ export const Projects = () => {
                         </div>
                     </Fade>
                     <Fade right>
-                        <div className={'projects__container__project__description projects__container__project__descriptionRight'}>
+                        <div className={'projects__container__project__description'}>
                             <p className={'projects__container__project__description__title'}>
                                 An attempt at Instagram
                             </p>
@@ -162,20 +162,7 @@ export const Projects = () => {
                     </Fade>
                 </div>
                 {/*Facebook*/}
-                <div className={'projects__container__project'}>
-                    <Fade left>
-                        <div className={'projects__container__project__description projects__container__project__descriptionLeft'}>
-                            <p className={'projects__container__project__description__title'}>
-                                Facebook
-                            </p>
-                            <p className={'projects__container__project__description__text projects__container__project__description__textLeft'}>
-                                A lightweight version of Facebook developed under the MERN stack.
-                            </p>
-                            <p className={'projects__container__project__description__date'}>
-                                November 2021
-                            </p>
-                        </div>
-                    </Fade>
+                <div className={'projects__container__project projects__container__projectReverse'}>
                     <Fade right>
                         <div className={'projects__container__project__img'}>
                             <img src={'./projects/Facebook/home.JPG'} alt={''} />
@@ -191,6 +178,19 @@ export const Projects = () => {
                                     Website
                                 </button>
                             </div>
+                        </div>
+                    </Fade>
+                    <Fade left>
+                        <div className={'projects__container__project__description projects__container__project__descriptionLeft'}>
+                            <p className={'projects__container__project__description__title'}>
+                                Facebook
+                            </p>
+                            <p className={'projects__container__project__description__text projects__container__project__description__textLeft'}>
+                                A lightweight version of Facebook developed under the MERN stack.
+                            </p>
+                            <p className={'projects__container__project__description__date'}>
+                                November 2021
+                            </p>
                         </div>
                     </Fade>
                 </div>

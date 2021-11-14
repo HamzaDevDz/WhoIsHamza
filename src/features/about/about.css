@@ -171,6 +171,17 @@
 }
 
 /*------------------------------- RESPONSIVE --------------------------------*/
+@media screen and (max-width: 1200px) {
+    .about__whoiam{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about__whoiam{
+        width: 100%;
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 800px) {
     .about{
         width: 100%;
