@@ -33,45 +33,9 @@ export const Projects = () => {
                 PROJECTS
                 <span className={'projects__title__line'}></span>
             </div>
-            {/*<Fade bottom delay={300}>*/}
-            {/*    <MySwiper*/}
-            {/*        slides={slides}*/}
-            {/*        class_container={'projects__swiperContainer'}*/}
-            {/*        class_wrapper={'projects__swiperWrapper'}*/}
-            {/*        width={width}*/}
-            {/*        height={height}*/}
-            {/*    />*/}
-            {/*</Fade>*/}
-            {/*<div className={'projects__container'}>*/}
-            {/*    <div className={'projects__container__project'}>*/}
-            {/*        <img className={'projects__container__project__img'} src={'./projects/messenger.jpg'} alt={'MessengerFacebookClone'} />*/}
-            {/*        <p className={'projects__container__project__title'}>*/}
-            {/*            Messenger Prototype*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*    <div className={'projects__container__project'}>*/}
-            {/*        <img className={'projects__container__project__img'} src={'./projects/instagram.JPG'} alt={'InstagramClone'} />*/}
-            {/*        <p className={'projects__container__project__title'}>*/}
-            {/*            Instagram Prototype*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className={'projects__container'}>*/}
-            {/*    <div className={'projects__container__project'}>*/}
-            {/*        <img className={'projects__container__project__img'} src={'./projects/facebook/home.JPG'} alt={'Facebook'} />*/}
-            {/*        <p className={'projects__container__project__title'}>*/}
-            {/*            Facebook*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*    <div className={'projects__container__project'}>*/}
-            {/*        <img className={'projects__container__project__img'} src={'./projects/WAX/Capture.JPG'} alt={'WAX'} />*/}
-            {/*        <p className={'projects__container__project__title'}>*/}
-            {/*            WAX e-commerce*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
             <div className={'projects__container'}>
                 <div className={'projects__container__progress'}>
+                    <CircleIcon className={'projects__container__progress__bullet'}/>
                     <CircleIcon className={'projects__container__progress__bullet'}/>
                     <CircleIcon className={'projects__container__progress__bullet'}/>
                     <CircleIcon className={'projects__container__progress__bullet'}/>
@@ -190,6 +154,34 @@ export const Projects = () => {
                             </p>
                             <p className={'projects__container__project__description__date'}>
                                 November 2021
+                            </p>
+                        </div>
+                    </Fade>
+                </div>
+                {/*Namma*/}
+                <div className={'projects__container__project'}>
+                    <Fade left>
+                        <div className={'projects__container__project__img'}>
+                            <img src={'./projects/Namma/Capture.JPG'} alt={''} />
+                            <div className={'projects__container__project__img__btn'}>
+                                <button onClick={() => {
+                                    window.open('https://github.com/HamzaDevDz/Namma')
+                                }}>
+                                    Github
+                                </button>
+                            </div>
+                        </div>
+                    </Fade>
+                    <Fade right>
+                        <div className={'projects__container__project__description'}>
+                            <p className={'projects__container__project__description__title'}>
+                                Namma - eCommerce Website
+                            </p>
+                            <p className={'projects__container__project__description__text'}>
+                                A prototype of an e-commerce website named Namma, developed under the MERN stack.
+                            </p>
+                            <p className={'projects__container__project__description__date'}>
+                                December 2021
                             </p>
                         </div>
                     </Fade>

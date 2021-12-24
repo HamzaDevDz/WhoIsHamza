@@ -37,7 +37,7 @@
 }
 .projects__container__progress{
     width: 5px;
-    height: 150vh;
+    height: 200vh;
     position: absolute;
     top: calc(20px + 20vh);
     background-color: #252934;
@@ -136,7 +136,7 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 40px;
-        width: 95%;
+        width: 80%;
     }
     .projects__container__project__img{
         margin-bottom: 20px;
